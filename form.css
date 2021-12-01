@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.start{
+    width: 100%;
+    /* height: 100vh; */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.7)), url('../img/choma7.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    /* text-align: center; */
+}
+.start h1{
+     text-align: center;
+     align-items: center;
+  }
+.start  p{
+    padding-bottom: 2%;
+    text-align: center;
+    font-size: 10px;
+
+}
+.text{
+    padding: 20rem 0;
+
+}
+.text p{
+font-size: 25px;
+margin-top: 2%;
+}
