@@ -30,7 +30,7 @@ $(() => {
     }
   };
 
-let activeJoints = getJoint("Equitorial");
+let activeJoints = getJoint("house nairobi");
 
 //display on load
 
