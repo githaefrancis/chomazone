@@ -1,0 +1,7 @@
+#meat-order{
+    display: flex;
+    flex-direction: row;
+}
+.meattype{
+    display: block;
+}
