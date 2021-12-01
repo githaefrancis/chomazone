@@ -1,7 +1,5 @@
 #meat-order{
     display: flex;
     flex-direction: row;
-}
-.meattype{
-    display: block;
+    margin: 15px;
 }

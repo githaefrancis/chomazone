@@ -6,8 +6,9 @@ class MakeOrder {
     }
 } 
 const meatPrice = [700, 600, 800];
-const deliveryPrice = []
+const deliveryPrice = [120]
 var orderPrice;
+var totalPrice;
 
 $(document).ready(function () {
     $('#meat-order').submit(function (event) {
@@ -29,9 +30,20 @@ $(document).ready(function () {
             orderPrice = meatPrice[2] * parseInt(quantity);
             
         };
-        alert('Your order will cost Ksh.' + orderPrice);
+        
 
         $('input#qty').val('');
+
+        $('input#delivery').val();
+        $('input#pickup').val();
+        if (delivery) {
+            totalPrice = orderPrice += parseInt(deliveryPrice);
+        }
+
+        alert('Your total cost will be ' + totalPrice);
+
+        $('input#delivery').val('');
+        $('input#pickup').val('');
 
     });
 
