@@ -24,8 +24,6 @@ $(() => {
       //   // console.log(joint);
 
       // });
-      console.log(result);
-      console.log("sasawa");
       return result;
     }
   };
