@@ -56,17 +56,12 @@ padding-top: 3px;
      color: white;
  }
  footer .container .FollowUS{
- /* display: flex;  */
-/* flex-wrap: wrap;
-display: inline inline-block; */
-align-items: center; 
+ align-items: center; 
  }
  footer .container .FollowUS h2{
      align-items: center;
-     /* display: flex;
-     flex-wrap: wrap; */
  }
- footer .container .FollowUS li {
+  footer .container .FollowUS li {
      list-style: none;
      font-size: 25px;
      
