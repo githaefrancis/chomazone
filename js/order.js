@@ -6,27 +6,32 @@ class MakeOrder {
     }
 } 
 const meatPrice = [700, 600, 800];
-
+const deliveryPrice = []
+var orderPrice;
 
 $(document).ready(function () {
     $('#meat-order').submit(function (event) {
         event.preventDefault();
-        quantity = $('qty').val();
-        meatType = $('#typemeat').val();
+
         let quantity;
         let meatType;
-        var price = meatPrice * quantity
+        quantity = $('input#qty').val();
+        meatType = $('#typemeat').val();
 
-        if(meatType = $('option#goat')) {
-            return meatPrice[0] * quantity;
-            alert(price);
-        }else if(meatType = $('option#beef')) {
-            return meatPrice[1] * quantity;
-            alert(price);
-        }else if(meatType = $('option#goat')) {
-            return meatPrice[2] * quantity;
-            alert(price);
+        if(meatType == 'goat') {
+            orderPrice = meatPrice[0] * parseInt(quantity);
+            
+        }else if(meatType == 'beef') {
+            orderPrice = meatPrice[1] * parseInt(quantity);
+            
+            
+        }else if(meatType == 'chicken') {
+            orderPrice = meatPrice[2] * parseInt(quantity);
+            
         };
+        alert('Your order will cost Ksh.' + orderPrice);
+
+        $('input#qty').val('');
 
     });
 
