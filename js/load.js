@@ -2,8 +2,6 @@ $(() => {
   let jointsList = joints;
   console.log(jointsList);
 
-  let testArray = [1, 2, 4, 5];
-  console.log(testArray[1]);
   // get joints
   let getJoint = (criteria) => {
     if (criteria == "all") {
@@ -30,21 +28,21 @@ $(() => {
     }
   };
 
-  <<
-  << << < HEAD
-  let activeJoints = getJoint("Nairobi");
+  //   <<
+  //   << << < HEAD
+  //   let activeJoints = getJoint("Nairobi");
 
-  $("#joints").text(`${activeJoints[0].name} ${activeJoints[0].location}`);
-}); ===
-=== =
-let activeJoints = getJoint("house nairobi");
+  //   $("#joints").text(`${activeJoints[0].name} ${activeJoints[0].location}`);
+  // }); ===
+  // === =
+  // let activeJoints = getJoint("house nairobi");
 
-//display on load
+  //display on load
 
-// use "all" as the filter parameter to show all
-let displayJoints = (activeJoints) => {
-  activeJoints.forEach(activeJoint => {
-    $("#img-joint").append(`<img src="${activeJoint.images}" width="480px"/>
+  // use "all" as the filter parameter to show all
+  let displayJoints = (activeJoints) => {
+    activeJoints.forEach(activeJoint => {
+      $("#img-joint").append(`<img src="${activeJoint.images}" width="480px"/>
   <p>${activeJoint.name}</p>
 
           <p>${activeJoint.location}</p>
@@ -52,11 +50,10 @@ let displayJoints = (activeJoints) => {
           <button id=${activeJoint.id}>See More</button>
   `);
 
-  })
-}
-// $("#img-joint").text(`${activeJoints[0].name} ${activeJoints[0].location}`);
-displayJoints(activeJoints)
+    })
+  }
+  // $("#img-joint").text(`${activeJoints[0].name} ${activeJoints[0].location}`);
+  displayJoints(activeJoints)
 
 
-}); >>>
->>> > 8 c008994a3feccae2ef56189c1a65a60359564e7
+})
