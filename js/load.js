@@ -47,7 +47,7 @@ $(() => {
              <h2 class="card-title mt-3">${activeJoint.name}</h2>
              <p>${activeJoint.location}</p>
              <p>Open hours: ${activeJoint.hours}</p>
-             <button class="btn btn-success" id="${activeJoint.id}">see more</button>
+             <a class="btn see-more-button text-white" href="oders.html" id="${activeJoint.id}">see more</a>
             </div>
         </div>
     </div>
