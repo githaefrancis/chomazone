@@ -12,10 +12,10 @@ $(() => {
     } else {
       console.log(criteria);
       console.log("hooray");
-      var matchExpression=new RegExp(`.*${criteria}.*`,`g`);
+      var matchExpression = new RegExp(`.*${criteria}.*`, `g`);
       // let result = jointsList.filter((joint) => joint.name == criteria);
-      let result = jointsList.filter((joint) => matchExpression.test(joint.name) ||matchExpression.test(joint.location) );
-      
+      let result = jointsList.filter((joint) => matchExpression.test(joint.name) || matchExpression.test(joint.location));
+
       // jointsList.forEach((joint) => {
       //   // console.log(joint);
 
@@ -26,7 +26,7 @@ $(() => {
     }
   };
 
-  let activeJoints = getJoint("Pritt Nairobi");
+  let activeJoints = getJoint("Nairobi");
 
   $("#joints").text(`${activeJoints[0].name} ${activeJoints[0].location}`);
 });
