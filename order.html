@@ -20,6 +20,7 @@
         <div class="meattype">
             <label for="meat-type">Meat Type</label>
             <select name="meat" id="typemeat">
+                <option value="none" id="no-option">--select--</option>
                 <option value="goat" id="goat">Roasted Goat</option>
                 <option value="beef" id="beef">Roasted Beef</option>
                 <option value="chicken" id="chicken">Roasted Chicken</option>
@@ -30,10 +31,10 @@
             <input type="text" name="Quantity" placeholder="Quantity in kg(s)" id="qty">
         </div>
 
-        <div class="option">
-            <input type="radio" name="option" id="delivery" value="delivery">
+        <div class="deloption">
+            <input type="radio" name="deliveryoption" id="delivery" value="delivery">
             <label for="delivery">Delivery</label>
-            <input type="radio" name="option" id="pickup" value="pickup">
+            <input type="radio" name="deliveryoption" id="pickup" value="pickup">
             <label for="pickup">Pickup</label>
         </div>
 

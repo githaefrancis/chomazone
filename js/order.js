@@ -20,35 +20,36 @@ $(document).ready(function () {
         meatType = $('#typemeat').val();
 
         if(meatType == 'goat') {
-            orderPrice = meatPrice[0] * parseInt(quantity);
+            orderPrice = meatPrice[0] * parseFloat(quantity);
             
         }else if(meatType == 'beef') {
-            orderPrice = meatPrice[1] * parseInt(quantity);
+            orderPrice = meatPrice[1] * parseFloat(quantity);
             
             
         }else if(meatType == 'chicken') {
-            orderPrice = meatPrice[2] * parseInt(quantity);
+            orderPrice = meatPrice[2] * parseFloat(quantity);
             
+        }else if(meatType == 'none') {
+            alert('Please select the type of meat you would like')
         };
         
-
+        $('#typemeat').val('none');
         $('input#qty').val('');
 
-        $('input#delivery').val();
-        $('input#pickup').val();
+        
+        var deliveryOption = $('[name=deliveryoption]:checked').val();
+
+        totalPrice = orderPrice += parseInt(deliveryPrice);
         if (delivery) {
-            totalPrice = orderPrice += parseInt(deliveryPrice);
+            alert('Your total cost will be ' + totalPrice);
+        }else if(pickup) {
+            alert('Your total cost will be ' + orderPrice);
         }
-
-        alert('Your total cost will be ' + totalPrice);
-
-        $('input#delivery').val('');
-        $('input#pickup').val('');
 
     });
 
 
 });
 
-let today=new Date(Date.now());
-console.log(today.toLocaleString());
+// let today=new Date(Date.now());
+// console.log(today.toLocaleString());
