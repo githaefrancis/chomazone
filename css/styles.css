@@ -68,6 +68,7 @@ align-items: center;
  }
  footer .container .FollowUS li {
      list-style: none;
+     font-size: 25px;
      
  }
  footer .container .FollowUS li a{
@@ -85,9 +86,9 @@ align-items: center;
      color: #000000;
      font-size: 25px;
  }
- footer .container .get-intouch li h{
+ footer .container .get-intouch li {
 
-
+ }
 
  
  /* bottom footer section */
