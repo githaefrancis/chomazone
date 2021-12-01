@@ -30,24 +30,30 @@ $(() => {
     }
   };
 
-let activeJoints = getJoint("house nairobi");
+  let activeJoints = getJoint("all");
 
-//display on load
+  //display on load
 
   // use "all" as the filter parameter to show all
-let displayJoints=(activeJoints)=>{
-  activeJoints.forEach(activeJoint=>{
-    $("#img-joint").append(`<img src="${activeJoint.images}" width="480px"/>
-  <p>${activeJoint.name}</p>
-
-          <p>${activeJoint.location}</p>
-          <p>Hours Open: ${activeJoint.hours}</p>
-          <button id=${activeJoint.id}>See More</button>
-  `);
-
-  })}
+  let displayJoints = (activeJoints) => {
+    activeJoints.forEach((activeJoint) => {
+      $(".locations").append(`   <div class="container mt-5">
+    <div class="card">
+        <div class="row">
+            <div class="col-md-4">
+             <img src="${activeJoint.images}" class="img-fluid">
+            </div>
+            <div class="col-md-8">
+             <h2 class="card-title mt-3">${activeJoint.name}</h2>
+             <p>${activeJoint.location}</p>
+             <p>Open hours: ${activeJoint.hours}</p>
+             <button class="btn btn-success" id="${activeJoint.id}">see more</button>
+            </div>
+        </div>
+    </div>
+  </div>`);
+    });
+  };
   // $("#img-joint").text(`${activeJoints[0].name} ${activeJoints[0].location}`);
-  displayJoints(activeJoints)  
-
-
+  displayJoints(activeJoints);
 });
