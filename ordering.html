@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="oders.css">
-    <link rel="stylesheet" href="oders.html">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -35,8 +34,8 @@
   <section class="images">
     <h1 class="text-center">Our specialty</h1>
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 text-center">
+      <div class="row d-flex flex-wrap justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4 text-center ">
           <div class="card">
             <img src="./img/choma4.jpg" class="card-img-top" alt="" />
           </div>
@@ -61,6 +60,108 @@
       </div>
     </div>
   </section>
+
+
+  <!-- order form section -->
+  <div class="container d-flex justify-content-center">
+    <form class="row g-3 border-2 border-dark mx-auto  mb-5 order-form">
+      <!-- new row -->
+      <div class="row g-3 d-flex justify-content-center">
+        <div class="col-md-3 col-sm-12">
+          <select
+            class="form-select"
+            aria-label="Default select"
+            id="typemeat"
+          >
+            <option selected>MEAT TYPE</option>
+            <option value="goat">Goat</option>
+            <option value="beef">Beef</option>
+            <option value="chicken">Chicken</option>
+          </select>
+        </div>
+        <div class="col-md-2 col-sm-12">
+          <input
+            type="text"
+            placeholder="kgs"
+            class=" form-control px-3 rounded-3 border-danger"
+          />
+        </div>
+
+        <div class="col-md-5 col-sm-12">
+          <textarea
+            name="instructions"
+            id=""
+            class="form-control"
+            cols="30"
+            rows="4"
+            placeholder="Instructions"
+          ></textarea>
+        </div>
+      </div>
+      <!-- new row -->
+      <div class="row g-3 d-flex justify-content-center">
+        <div class="form-check form-check-inline col-md-4">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio1"
+            value="option1"
+          />
+          <label class="form-check-label" for="inlineRadio1">Delivery</label>
+        </div>
+        <div class="form-check form-check-inline col-md-4">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio2"
+            value="option2"
+          />
+          <label class="form-check-label" for="inlineRadio2">Pickup</label>
+        </div>
+      </div>
+      <!-- delivery row -->
+
+      <!-- delivery row -->
+
+      <!-- contact row -->
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-4">
+          <label for="customer-name" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            id="customer-name"
+            placeholder="Name"
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="customer-number" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            id="customer-number"
+            placeholder="Mobile +254"
+          />
+        </div>
+      </div>
+      <!-- contact row -->
+
+      <!-- button row -->
+      <div class="row d-flex justify-content-center">
+        <div class="col-4">
+          <button
+            type="submit"
+            class="btn text-center see-more-button text-white my-4 form-control "
+          >
+           <a href="selle'r.html" class="btn see-more-button text-white"> Place Order</a>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- order form section -->
         <!-- footer section -->
          <!-- footer section -->
     <section class="bottom">
