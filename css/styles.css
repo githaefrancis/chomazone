@@ -39,9 +39,9 @@ margin-top: 2%;
 text-align: center;
 padding-top: 3px;
 }
- .btn{
+ /* .btn{
      background-color: #FF6F07;
- }
+ } */
  /* footer section */
  footer{
      margin-top: 10 px;
@@ -102,4 +102,16 @@ padding-top: 3px;
      font-size: 20px;
      word-spacing: 2px;
      text-transform: capitalize;
+ }
+
+ /* style the see more button */
+
+ .see-more-button{
+     background-color:#941F38;
+ }
+
+ /* order form */
+
+ .order-form{
+     background-color: #FAF6F6;
  }
