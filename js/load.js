@@ -45,15 +45,15 @@ $(() => {
              <img src="${activeJoint.images}" class="img-fluid">
             </div>
             <div class="col-md-8 joint-body">
-             <h2 class="card-title mt-3">${activeJoint.name}</h2>
+             <h2 class="card-title mt-3 zones-names">${activeJoint.name}</h2>
              <i class="fas fa-star"></i>
              <i class="fas fa-star"></i>
              <i class="fas fa-star"></i>
              <i class="fas fa-star"></i>
              <i class="fas fa-star-half-alt"></i>
-             <p><i class="fas fa-map-marker-alt"> </i> ${activeJoint.location}</p>
+             <p class= "zones-location"><i class="fas fa-map-marker-alt"> </i> ${activeJoint.location}</p>
              <hr class="fw-5"/>
-             <p>Open hours: ${activeJoint.hours}</p>
+             <p class="zones-hours">Open hours: ${activeJoint.hours}</p>
              <a class="btn see-more-button text-white" href="ordering.html" id="${activeJoint.id}">see more</a>
             </div>
         </div>

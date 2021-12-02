@@ -215,6 +215,16 @@ form {
   font-size: 17px;
 }
 
+.zones-names {
+  font-family: 'EB Garamond', serif;
+}
+
+.zones-location,
+.zones-hours {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(56, 54, 54);
+}
+
 @media only screen and (max-width: 480px) {
   .avatar img {
     height: 200px;
