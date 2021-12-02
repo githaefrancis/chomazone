@@ -34,6 +34,9 @@ $(() => {
 
   // use "all" as the filter parameter to show all
   let displayJoints = (activeJoints) => {
+    $(".locations").text("");
+    $(".locations").append(`<h1>Choma Zones in Nairobi</h1>`);
+    if(activeJoints.length>0){
     activeJoints.forEach((activeJoint) => {
       $(".locations").append(`   <div class="container mt-5">
     <div class="card">
@@ -41,21 +44,59 @@ $(() => {
             <div class="col-md-4">
              <img src="${activeJoint.images}" class="img-fluid">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 joint-body">
              <h2 class="card-title mt-3">${activeJoint.name}</h2>
-             <p>${activeJoint.location}</p>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star-half-alt"></i>
+             <p><i class="fas fa-map-marker-alt"> </i> ${activeJoint.location}</p>
+             <hr class="fw-5"/>
              <p>Open hours: ${activeJoint.hours}</p>
              <a class="btn see-more-button text-white" href="ordering.html" id="${activeJoint.id}">see more</a>
             </div>
         </div>
     </div>
   </div>`);
-    });
+    });}
+    else{
+      $('.locations').append(`<h2 class="text-center">No results found</h2>`);
+    }
   };
   // $("#img-joint").text(`${activeJoints[0].name} ${activeJoints[0].location}`);
   displayJoints(activeJoints);
+  $('#searchButton').on('click',(e)=>{
+    console.log('#searchBar');
+    let searchWord=$('#searchBar').val().trim();
+    if(searchWord.length>0){
+      console.log(searchWord);
+      activeJoints=getJoint(searchWord);
+      displayJoints(activeJoints);
 
-  //redirect to order page
+    }
+    else{
+      return;
+    }
+    window.location.href="#location-section"
+
+  })
+
+  $('#searchBar').keyup((e)=>{
+    if(e.keyCode===13){
+      console.log("entered");
+      e.preventDefault();
+      $('#searchButton').click();
+    }
+  });
+
+  $('#searchBar').keydown(()=>{
+    if($('#searchBar').val().trim.length===0){
+      console.log("empty");
+      displayJoints(getJoint("all"));
+    }
+  })
+   //redirect to order page
   $('.see-more-button').on('click',(e)=>{
     let selectedJointButton=e.target.id;
     localStorage.setItem('selectedJoint',selectedJointButton.toString())

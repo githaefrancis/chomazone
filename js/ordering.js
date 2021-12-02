@@ -1,4 +1,6 @@
 prices = [700, 600, 800];
+
+let specialtyPrices={chuckRoast:500,clodRoast:700,brisket:580,stripLoinRoast:650,roastedGoat:700,tenderLoin:600};
 function Order(
   meatType,
   quantity,
@@ -20,18 +22,19 @@ function Order(
   this.total = 0;
 }
 Order.prototype.getOrderTotal = function () {
-  console.log(this.meatType);
-  if (this.meatType == "goat") {
-    this.unitPrice = prices[0];
-    console.log(this.unitPrice);
-  } else if (this.meatType == "beef") {
-    this.unitPrice = prices[1];
-    console.log("yes");
-  } else if (this.meatType == "chicken") {
-    this.unitPrice = prices[2];
-    console.log(yeah);
-  }
-
+  // console.log(this.meatType);
+  // if (this.meatType == "goat") {
+  //   this.unitPrice = prices[0];
+  //   console.log(this.unitPrice);
+  // } else if (this.meatType == "beef") {
+  //   this.unitPrice = prices[1];
+  //   console.log("yes");
+  // } else if (this.meatType == "chicken") {
+  //   this.unitPrice = prices[2];
+  //   console.log(yeah);
+  // }
+  this.unitPrice=specialtyPrices[this.meatType];
+  console.log(this.unitPrice);
   if (this.delivery) {
     this.total = this.unitPrice * this.quantity + 150;
   } else this.total = this.unitPrice * this.quantity;
@@ -43,7 +46,6 @@ $(() => {
   let clickedJoint = parseInt(localStorage.getItem("selectedJoint"));
 
   let getOrderJoint = (id) => {
-    console.log("heeeeey");
     let orderJoints = joints.filter((joint) => {
       return joint.id === id;
     });
@@ -64,7 +66,7 @@ $(() => {
 </div>
 </div>`);
   //orders
-
+  $('#order-source').text(selectedJoint[0].name);
   let orders = [];
 
   let getLocalStorageState = () => {
@@ -76,21 +78,25 @@ $(() => {
   };
   //read order form inputs
   $("#order-form").submit((e) => {
-    alert("form submitted");
+    $("#orderModal").modal('show')
+    // confirm order details
+
+    // $('.modal-body').append("new Order");
+    //confirm order details
     e.preventDefault();
     let meatType = $("#typemeat").val();
     let quantity = parseInt($("#quantity").val());
     let instruction = $("#instruction").val();
     let delivery = $("[name=delivery]:checked").val();
-    let deliveryLocaion = $("#deliveryLocation").val();
+    let deliveryLocation = $("#deliveryLocation").val();
     let customerName = $("#customer-name").val();
     let customerNumber = $("#customer-number").val();
     if (delivery == "pickup") {
       delivery = false;
-      console.log(delivery);
+      
     } else if (delivery == "delivery") {
       delivery = true;
-      console.log(delivery);
+      
     }
     let currentOrder = getLocalStorageState();
     currentOrder.push(
@@ -105,6 +111,7 @@ $(() => {
       )
     );
     console.log((currentOrder[currentOrder.length-1]).getOrderTotal());
+    $('.modal-body').append(`Your order of ${currentOrder[currentOrder.length-1].meatType}<p>Total amount: ${currentOrder[currentOrder.length-1].total}</p>`);
     localStorage.setItem("placedOrders", JSON.stringify(currentOrder));
 
     console.log(getLocalStorageState());
