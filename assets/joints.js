@@ -2,7 +2,7 @@
   var joints = [
     {
       "id":1,
-      "chomacode":"3456",
+      "chomacode":3456,
       "name": "Kamakis",
       "location": "Eastern Bypass,Nairobi",
       "maps": "https://www.google.com/maps/place/Kamakis/@-1.1711136,36.9700983,17z/data=!3m1!4b1!4m5!3m4!1s0x182f4094503d5f1b:0x10256d858e5bb8f2!8m2!3d-1.171119!4d36.972287",

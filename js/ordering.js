@@ -54,13 +54,13 @@ $(() => {
   let selectedJoint = getOrderJoint(clickedJoint);
 
   $("#profile").append(`<div class="">
-  <h1>${selectedJoint[0].name}</h1>
-  <p>${selectedJoint[0].location}</p>
+  <h1>Name: ${selectedJoint[0].name}</h1>
+  <p> ${selectedJoint[0].location}</p>
   <h2>Hours : <span>${selectedJoint[0].hours}</span></h2>
   
 </div>
 <div class="avatar">
-<img src="${selectedJoint[0].images}"  class="w-75 img-fluid rounded-circle" alt="">
+<img src="${selectedJoint[0].images}"  class="img-fluid rounded-circle" alt="">
 </div>
 </div>`);
   //orders
@@ -84,7 +84,7 @@ $(() => {
     let delivery = $("[name=delivery]:checked").val();
     let deliveryLocaion = $("#deliveryLocation").val();
     let customerName = $("#customer-name").val();
-    let customerNumber = $("customer-number").val();
+    let customerNumber = $("#customer-number").val();
     if (delivery == "pickup") {
       delivery = false;
       console.log(delivery);

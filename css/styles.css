@@ -105,6 +105,9 @@ footer .container .get-intouch li {
 .see-more-button {
   background-color: #941f38;
 }
+.button-custom{
+  background-color: #941f38;
+}
 
 /* order form */
 
@@ -132,8 +135,13 @@ footer li,
 
 .policy {
   background-color: #171111;
-  height:5rem
+  height:fit-content;
 }
 .copyright{
     color:#736868;
+}
+/* order page */
+.avatar img{
+  height: 480px;
+  width: 480px;
 }
