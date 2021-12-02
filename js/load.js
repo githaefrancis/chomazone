@@ -35,10 +35,10 @@ $(() => {
   // use "all" as the filter parameter to show all
   let displayJoints = (activeJoints) => {
     $(".locations").text("");
-    $(".locations").append(`<h1>Choma Zones in Nairobi</h1>`);
+    $(".locations").append(`<h1><span class="our">CHOMA ZONES</span><span class="special"> IN NAIROBI</span></h1>`);
     if (activeJoints.length > 0) {
       activeJoints.forEach((activeJoint) => {
-        $(".locations").append(`   <div class="container mt-5">
+        $(".locations").append(`   <div class="container mt-5"> 
     <div class="card">
         <div class="row">
             <div class="col-md-4">

@@ -197,6 +197,24 @@ form {
   margin: auto;
 }
 
+.topHeadings {
+  font-family: 'Abril Fatface', cursive;
+  margin-top: 3%;
+}
+
+.our {
+  color: #530E6B;
+}
+
+.special {
+  color: #941F38;
+}
+
+.card-p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+
 @media only screen and (max-width: 480px) {
   .avatar img {
     height: 200px;
