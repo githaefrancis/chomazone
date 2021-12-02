@@ -1,66 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="form.css">
-    <link rel="stylesheet" href="form.html">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="start">
-        <div class="logo">
-            <img src="./img/choma-zone logo.png" width="25%" alt="">
+    <form class=" container w-50 bg-dark p-5 mt-5"
+        action="https://moringaschool.us20.list-manage.com/subscribe/post?u=35d3a2fbce67758b3ff5dfda4&amp;id=19f51cc2e7"
+        method="post" id="contact">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label text-white">Name</label>
+            <input type="text" class="form-control" name="NAME" id="name" aria-describedby="emailHelp" required>
         </div>
-        <div class="text">
-            <h1>GET THE BEST CHOMA IN TOWN</h1>
-            <p>Eats inn and Delivery</p>
-     </div>
-
-
-
-        <!-- footer section -->
-        <section class="bottom">
-            <footer>
-                <div class="container d-flex justify-content-evenly ">
-                    <div class="get-intouch">
-                        <h2>Get intouch</h2>
-                   <ul >
-                       <li><a href="#"><i  class="fas fa-phone-alt"arial-hidden="true"></i></i></a>0702081966</li>
-                       <li><a href="#"><i class="fas fa-envelope"arial-hidden="true"></i></a>Chomazone@yahoo.com</li>
-                       <li><a href="#"><i class="fas fa-globe" arial-hidden="true"></i></a>WWW.choma.com</li>
-        
-                    </ul>
-                    </div>
-                    <div class="FollowUS">
-                        <h2>Follow Us</h2>
-                        <ul>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fas fa-wifi"></i></a></li>
-        
-                        </ul>
-                    </div>
-                    <div class="keepIn">
-                        <h2>Keepn in Touch</h2>
-                        <p>Sign up to our mailing list  and we will send you interesting snippets
-                            on all things marketing
-                        </p>
-                        <button class="btn btn-danger">Sign Up Now</button>
-                    </div>
-                </div><br><br>
-                <div class="footer-bottom">
-                    <p>About us  Services  privacy Statement</p>
-                     <p>copyright &copy;2021 Choma Zone All rights  Reserved</p>
-                </div>
-        
-            </footer>
-        </section>
-        
-
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
+            <input type="email" class="form-control" name="EMAIL" id="email" aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label text-white">Password</label>
+            <input type="password" class="form-control" name="PASSWORD" id="pass" required>
+        </div>
+        <button type="submit text-center" class="btn btn-primary">Submit</button>
+    </form>
+    <script src="js/load.js"></script>
 </body>
+
 </html>

@@ -16,8 +16,8 @@ $(() => {
       // let result = jointsList.filter((joint) => joint.name == criteria);
       let result = jointsList.filter(
         (joint) =>
-          matchExpression.test(joint.name) ||
-          matchExpression.test(joint.location)
+        matchExpression.test(joint.name) ||
+        matchExpression.test(joint.location)
       );
 
       // jointsList.forEach((joint) => {
@@ -36,9 +36,9 @@ $(() => {
   let displayJoints = (activeJoints) => {
     $(".locations").text("");
     $(".locations").append(`<h1>Choma Zones in Nairobi</h1>`);
-    if(activeJoints.length>0){
-    activeJoints.forEach((activeJoint) => {
-      $(".locations").append(`   <div class="container mt-5">
+    if (activeJoints.length > 0) {
+      activeJoints.forEach((activeJoint) => {
+        $(".locations").append(`   <div class="container mt-5">
     <div class="card">
         <div class="row">
             <div class="col-md-4">
@@ -59,46 +59,64 @@ $(() => {
         </div>
     </div>
   </div>`);
-    });}
-    else{
+      });
+    } else {
       $('.locations').append(`<h2 class="text-center">No results found</h2>`);
     }
   };
   // $("#img-joint").text(`${activeJoints[0].name} ${activeJoints[0].location}`);
   displayJoints(activeJoints);
-  $('#searchButton').on('click',(e)=>{
+  $('#searchButton').on('click', (e) => {
     console.log('#searchBar');
-    let searchWord=$('#searchBar').val().trim();
-    if(searchWord.length>0){
+    let searchWord = $('#searchBar').val().trim();
+    if (searchWord.length > 0) {
       console.log(searchWord);
-      activeJoints=getJoint(searchWord);
+      activeJoints = getJoint(searchWord);
       displayJoints(activeJoints);
 
-    }
-    else{
+    } else {
       return;
     }
-    window.location.href="#location-section"
+    window.location.href = "#location-section"
 
   })
 
-  $('#searchBar').keyup((e)=>{
-    if(e.keyCode===13){
+  $('#searchBar').keyup((e) => {
+    if (e.keyCode === 13) {
       console.log("entered");
       e.preventDefault();
       $('#searchButton').click();
     }
   });
 
-  $('#searchBar').keydown(()=>{
-    if($('#searchBar').val().trim.length===0){
+  $('#searchBar').keydown(() => {
+    if ($('#searchBar').val().trim.length === 0) {
       console.log("empty");
       displayJoints(getJoint("all"));
     }
   })
-   //redirect to order page
-  $('.see-more-button').on('click',(e)=>{
-    let selectedJointButton=e.target.id;
-    localStorage.setItem('selectedJoint',selectedJointButton.toString())
+  //redirect to order page
+  $('.see-more-button').on('click', (e) => {
+    let selectedJointButton = e.target.id;
+    localStorage.setItem('selectedJoint', selectedJointButton.toString())
+  })
+
+  $("#contact").on("submit", function (e) {
+    e.preventDefault();
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var password = $("#pass").val();
+    console.log(name);
+
+    if (!name || !email || !password) {
+      alert("fill all the values");
+      $(myForm)[0].reset();
+      return false;
+    } else {
+      alert(`${name} we have received your message. Thank you for reaching out to us.`);
+      $(myForm)[0].reset();
+      return true;
+    }
+
   })
 });
