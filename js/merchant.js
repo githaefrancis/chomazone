@@ -41,6 +41,7 @@ $(() => {
       <div class="orders">
         <div class="container">
             <h1 class="text-center">Placed Orders</h1>
+            <div class="table-responsive">
           <table class="table table-striped mb-5">
             <thead>
               <tr class="">
@@ -55,6 +56,7 @@ $(() => {
               
             </tbody>
           </table>
+          </div>
         </div>
       </div>
     </section>
