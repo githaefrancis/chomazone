@@ -54,4 +54,11 @@ $(() => {
   };
   // $("#img-joint").text(`${activeJoints[0].name} ${activeJoints[0].location}`);
   displayJoints(activeJoints);
+
+  //redirect to order page
+  $('.see-more-button').on('click',(e)=>{
+    let selectedJointButton=e.target.id;
+    alert(selectedJointButton);
+    localStorage.setItem('selectedJoint',selectedJointButton.toString())
+  })
 });
