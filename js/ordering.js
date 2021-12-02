@@ -115,4 +115,37 @@ $(() => {
   //   e.preventDefault;
   //   alert('submitted');
   // })
+
+  // form validation
+  $(function() {
+    $("input[name='name']").validate({
+      rules: {
+        name:"required"
+      },
+      messages: {
+        name: "Please enter your name"
+      },
+      submitHandler: function(input) {
+        input.submit();
+      }
+    });
+    $("input[name='mobile']").validate({
+      rules: {
+        mobile:"required",
+        minlength: 10,
+        maxlength: 10,
+        matches: "[0-9+]"
+      },
+      messages: {
+        mobile: "Please enter your mobile number",
+        minlength: "Enter a valid mobile number",
+        maxlength: "Enter a valid mobile number",
+      },
+      submitHandler: function(input) {
+        input.submit();
+      },
+    });
+  });
+
 });
+
