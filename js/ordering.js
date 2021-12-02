@@ -63,7 +63,7 @@ $(() => {
 </div>
 </div>`);
   //orders
-
+  $('#order-source').text(selectedJoint[0].name);
   let orders = [];
 
   let getLocalStorageState = () => {
