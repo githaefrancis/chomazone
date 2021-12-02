@@ -98,7 +98,7 @@ $(() => {
       </section>
       <div class="text-center policy mt-3">
         <p class="text-white pt-2">About us  Services  privacy Statement</p>
-         <p class="px-5 copyright">copyright &copy; <span class="text-white">2021 Choma Zone </span> All rights  Reserved</p>
+         <p class="px-5 pb-3 copyright">copyright &copy; <span class="text-white">2021 Choma Zone </span> All rights  Reserved</p>
     </div>
 `);
       let getLocalStorageState = () => {
