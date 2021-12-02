@@ -1,5 +1,3 @@
-#meat-order{
-    display: flex;
-    flex-direction: row;
-    margin: 15px;
+.yourorder{
+    text-align: center;
 }

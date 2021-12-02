@@ -15,9 +15,9 @@
     /* text-align: center; */
 }
 .start h1{
-     text-align: center;
-     align-items: center;
-  }
+    text-align: center;
+    align-items: center;
+}
 .start  p{
     padding-bottom: 2%;
     text-align: center;
@@ -33,7 +33,7 @@ font-size: 25px;
 margin-top: 2%;
 }
  /* footer section */
- footer{
+footer{
     margin-top: 10 px;
     position: relative;
     width: 100%;
@@ -51,7 +51,7 @@ align-items: center;
 footer .container .FollowUS h2{
     align-items: center;
 }
- footer .container .FollowUS li {
+footer .container .FollowUS li {
     list-style: none;
     font-size: 25px;
     
@@ -62,8 +62,8 @@ color: #000000;
 }
 /* get in touch section */
 footer .container .get-intouch li {
-   list-style: none;
-   font-size: 24px;
+    list-style: none;
+    font-size: 24px;
 }
 footer .container .get-intouch li a{
     margin: 2px;
@@ -71,9 +71,10 @@ footer .container .get-intouch li a{
     color: #000000;
     font-size: 25px;
 }
-footer .container .get-intouch li {
-
+.yourorder{
+    text-align: center;
 }
+.yourorder
 
 
 /* bottom footer section */
