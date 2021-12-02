@@ -89,7 +89,14 @@ $(() => {
       $('#searchButton').click();
     }
   });
-  //redirect to order page
+
+  $('#searchBar').keydown(()=>{
+    if($('#searchBar').val().trim.length===0){
+      console.log("empty");
+      displayJoints(getJoint("all"));
+    }
+  })
+   //redirect to order page
   $('.see-more-button').on('click',(e)=>{
     let selectedJointButton=e.target.id;
     localStorage.setItem('selectedJoint',selectedJointButton.toString())
