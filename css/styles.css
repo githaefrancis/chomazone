@@ -3,14 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-    overflow-x: hidden
+body {
+  overflow-x: hidden;
 }
-.icon{
-    margin-bottom: -35px;
+.icon {
+  margin-bottom: -35px;
 }
-.text{
-    padding: 20rem 0;
+.text {
+  padding: 20rem 0;
 }
 .start {
   width: 100%;
@@ -26,7 +26,6 @@ body{
 .start h1 {
   text-align: center;
   align-items: center;
-
 }
 .start p {
   padding-bottom: 2%;
@@ -41,21 +40,20 @@ body{
   margin-top: 2%;
 }
 
- .container .btn-warning{
-     background-color: #FF6F07;
- }
- .container .fa-star{
-     color: #FF6F07;
- }
- .container .fa-star-half-alt{
-    color: #FF6F07;
+.container .btn-warning {
+  background-color: #ff6f07;
+}
+.container .fa-star {
+  color: #ff6f07;
+}
+.container .fa-star-half-alt {
+  color: #ff6f07;
+}
+.container .btn-success {
+  background-color: #941f38;
+  color: white;
+}
 
- }
- .container .btn-success{
-     background-color: #941F38;
-     color: white;
- } 
- 
 .locations h1 {
   text-align: center;
 }
@@ -128,13 +126,13 @@ footer .container .get-intouch li {
 .see-more-button {
   background-color: #941f38;
 }
-.button-custom{
+.button-custom {
   background-color: #941f38;
 }
 
 /* order form */
 
-.order-form {
+#order-form {
   background-color: #faf6f6;
 }
 
@@ -143,7 +141,7 @@ footer .container .get-intouch li {
 .header {
   height: 100vh;
   background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.7)),
-    url("../img/choma7.jpg");
+    url("../img/grill.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -158,14 +156,14 @@ footer li,
 
 .policy {
   background-color: #171111;
-  height:fit-content;
+  height: fit-content;
 }
-.copyright{
-    color:#736868;
-    margin-bottom: 0;
+.copyright {
+  color: #736868;
+  margin-bottom: 0;
 }
 /* order page */
-.avatar img{
+.avatar img {
   height: 480px;
   width: 480px;
 }
@@ -179,7 +177,17 @@ footer li,
 
 /* joints page */
 
-.joint-body{
+.joint-body {
+  background-color: #faf6f6;
+}
 
-  background-color: #FAF6F6;
+@media only screen and (max-width: 480px) {
+  .avatar img {
+    height: 200px;
+    width: 200px;
+    
+    
+    
+    
+  }
 }
