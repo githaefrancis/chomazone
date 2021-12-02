@@ -43,7 +43,6 @@ $(() => {
   let clickedJoint = parseInt(localStorage.getItem("selectedJoint"));
 
   let getOrderJoint = (id) => {
-    console.log("heeeeey");
     let orderJoints = joints.filter((joint) => {
       return joint.id === id;
     });

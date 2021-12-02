@@ -170,3 +170,16 @@ footer li,
   width: 480px;
 }
 
+/* search button */
+
+#inputlocation {
+  width: 40%;
+  margin: auto;
+}
+
+/* joints page */
+
+.joint-body{
+
+  background-color: #FAF6F6;
+}

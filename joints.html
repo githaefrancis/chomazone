@@ -22,14 +22,17 @@
         <div class="text">
             <h1>GET THE BEST CHOMA IN TOWN</h1>
             <p>Eats inn and Delivery</p>
-            <form class="d-flex justify-content-center">
-                <div class="form-group">
-                    <label class="input" for="exampleInputLocation"></label>
-                    <input type="location" class="form-control" id="exampleInputlocation1" placeholder="find location"
-                        style="width:100%;">
-                    <small id="locationHelp" class="form-text text-muted">
-                </div>
-            </form>
+            <label class="input" for="exampleInputLocation"></label>
+            <!-- <input type="text" class="form-control" id="inputlocation" onkeyup="myFunction()" placeholder="find location"> -->
+            <div class="input-group" id="inputlocation">
+              <input type="text" class="form-control" id="searchBar" placeholder="find location...">
+              <span class="input-group-btn">
+                <button class="btn  button-custom" id="searchButton" type="submit">
+                  <i class="fa fa-search "></i>
+                </button>
+              </span>
+            </div>
+            <small id="locationHelp" class="form-text text-muted">
         </div>
     </div>
     <!-- specialty section -->
@@ -88,8 +91,8 @@
       </div>
 
     </section>
-    <section  class="locations">
-        <h1>Choma Zones in Nairobi</h1>
+    <section  class="locations" id="location-section">
+        
                 
       
 
