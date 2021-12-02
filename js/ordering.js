@@ -114,6 +114,6 @@ $(() => {
 
   // document.getElementById('orderform').addEventListener('submit',(e)=>{
   //   e.preventDefault;
-  //   alert('submitte');
+  //   alert('submitted');
   // })
 });
