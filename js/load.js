@@ -58,7 +58,6 @@ $(() => {
   //redirect to order page
   $('.see-more-button').on('click',(e)=>{
     let selectedJointButton=e.target.id;
-    alert(selectedJointButton);
     localStorage.setItem('selectedJoint',selectedJointButton.toString())
   })
 });
