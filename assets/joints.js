@@ -36,7 +36,7 @@
       "chomacode":6200,
       "name":"Coco Jambo",
       "location":"Dennis Pritt road,Kilimani, Nairobi",
-      "maps":"https://www.google.com/maps/dir/-1.1927516,36.9218479/red+house+grill/@-1.2587282,36.7907375,13z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x182f10b1e3a3c755:0xcc576f667360a96!2m2!1d36.7928596!2d-1.2848179",
+      "maps":"https://goo.gl/maps/usg2VVnk8jSeMDPNA",
       "hours":"6:00 am - 10:00 pm",
       "prices":600,
       "images":"./img/choma search2.jpg"
@@ -47,7 +47,7 @@
       "chomacode":5500,
       "name":"Nyumbani Njuguna's Place",
       "location":"Waiyaki Way,Nairobi",
-      "maps":"https://www.google.com/maps/dir/-1.1927516,36.9218479/red+house+grill/@-1.2587282,36.7907375,13z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x182f10b1e3a3c755:0xcc576f667360a96!2m2!1d36.7928596!2d-1.2848179",
+      "maps":"https://goo.gl/maps/TSLXMDiAoxq79M4NA",
       "hours":"6:00 am - 11:30 pm",
       "prices":600,
       "images":"./img/choma2.jpg"
@@ -58,7 +58,7 @@
       "chomacode":3200,
       "name":"Sagret Hotel Equitorial",
       "location":"Dennis Pritt road, Nairobi",
-      "maps":"https://www.google.com/maps/dir/-1.1927516,36.9218479/red+house+grill/@-1.2587282,36.7907375,13z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x182f10b1e3a3c755:0xcc576f667360a96!2m2!1d36.7928596!2d-1.2848179",
+      "maps":"https://goo.gl/maps/mTMUo8Z4r3QnkLqa9",
       "hours":"6:00 am - 10:00 pm",
       "prices":600,
       "images":"./img/choma search1.jpg"
@@ -69,7 +69,7 @@
       "chomacode":2958,
       "name":"Jiweke Tavern",
       "location":"Kibera Road Close to, Ngong Rd",
-      "maps":"https://www.google.com/maps/dir/-1.1927516,36.9218479/red+house+grill/@-1.2587282,36.7907375,13z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x182f10b1e3a3c755:0xcc576f667360a96!2m2!1d36.7928596!2d-1.2848179",
+      "maps":"https://goo.gl/maps/4m2eXjkTYdtdhUCh9",
       "hours":"6:00 am - 11:00 pm",
       "prices":600,
       "images":"./img/choma4.jpg"
