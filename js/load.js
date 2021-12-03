@@ -106,15 +106,16 @@ $(() => {
     var name = $("#name").val();
     var email = $("#email").val();
     var password = $("#pass").val();
-    console.log(name);
+    console.log("grace");
+    console.log(name, email, password);
 
     if (!name || !email || !password) {
       alert("fill all the values");
-      $(myForm)[0].reset();
+      $("#contact")[0].reset();
       return false;
     } else {
       alert(`${name} we have received your message. Thank you for reaching out to us.`);
-      $(myForm)[0].reset();
+      $("#contact")[0].reset();
       return true;
     }
 
