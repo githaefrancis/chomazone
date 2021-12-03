@@ -75,10 +75,26 @@ $(() => {
 </div>
 </div>`);
 
+  let displayableName = (rawName) => {
+    if (rawName == "chuckRoast") {
+      return "Chuck Roast @500/kg";
+    } else if (rawName == "clodRoast") {
+      return "Clod Roast @700/kg";
+    } else if (rawName == "brisket") {
+      return "Brisket @580/Kg";
+    } else if (rawName == "tenderLoin") {
+      return "Tenderloin @600/Kg";
+    } else if (rawName == "stripLoinRoast") {
+      return "Strip Loin Roast @650/Kg";
+    } else if (rawName == "roastedGoat") {
+      return "Roasted Goat @700/Kg";
+    }
+  };
   //order-form
   $("form").on("change", () => {
     let selectedDeliveryOption = $("[name=delivery]:checked").val();
     console.log(selectedDeliveryOption);
+    $("#itemDisplay").text(displayableName($("#typemeat").val()));
     if (selectedDeliveryOption == "delivery") {
       $("#deliveryDiv").removeClass("d-none");
     } else {
@@ -132,17 +148,24 @@ $(() => {
       )
     );
     console.log(currentOrder[currentOrder.length - 1].getOrderTotal());
+    if(currentOrder[currentOrder.length - 1].deliveryLocation){
+      let displayableLocation=currentOrder[currentOrder.length - 1].deliveryLocation
+    }
+    else if(!(currentOrder[currentOrder.length - 1].deliveryLocation)){
+      let displayableLocation="Pickup"
+    }
+    $(".modal-body").text("");
     $(".modal-body").append(
       `Your order item is ${
         currentOrder[currentOrder.length - 1].meatType
-      }<p>Total amount: ${currentOrder[currentOrder.length - 1].total}</p>`
+      }<p>Quantity ${currentOrder[currentOrder.length - 1].quantity} Kgs</p><p>Total amount: ${currentOrder[currentOrder.length - 1].total}</p><p>${currentOrder[currentOrder.length - 1].deliveryLocation}</p>`
     );
     localStorage.setItem("placedOrders", JSON.stringify(currentOrder));
 
     console.log(getLocalStorageState());
 
-
-    document.getElementById('order-form').reset()
+    document.getElementById("order-form").reset();
+    $("#itemDisplay").text(displayableName($("#typemeat").val()));
   });
 
   // alt submit
