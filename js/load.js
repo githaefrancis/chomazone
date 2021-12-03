@@ -63,6 +63,11 @@ $(() => {
     } else {
       $('.locations').append(`<h2 class="text-center">No results found</h2>`);
     }
+
+    $('.see-more-button').on('click', (e) => {
+      let selectedJointButton = e.target.id;
+      localStorage.setItem('selectedJoint', selectedJointButton.toString())
+    })
   };
   // $("#img-joint").text(`${activeJoints[0].name} ${activeJoints[0].location}`);
   displayJoints(activeJoints);
