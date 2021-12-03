@@ -64,49 +64,49 @@ $(() => {
       <!-- footer section -->
       <!-- footer section -->
       <section class="bottom ">
-        <footer class="flex justify-content-between">
-            <div class="d-flex justify-content-evenly">
-                <div class="get-intouch">
-                    <h2>Get in touch</h2>
-                    <hr>
-                    <ul>
-                        <li><a href="#"><i class="fas fa-phone-alt " arial-hidden="true"></i></i></a>0702081966</li>
-                        <li><a href="#"><i class="fas fa-envelope " arial-hidden="true"></i></a>chomazone@yahoo.com</li>
-                        <li><a href="#"><i class="fas fa-globe " arial-hidden="true"></i></a>www.choma.com</li>
+      <footer class="">
+          <div class="d-flex justify-content-evenly flex-wrap">
+              <div class="get-intouch">
+                  <h2>Get in touch</h2>
+                  <hr>
+                  <ul>
+                      <li><a href="#"><i class="fas fa-phone-alt " arial-hidden="true"></i></i></a>0702081966</li>
+                      <li><a href="#"><i class="fas fa-envelope " arial-hidden="true"></i></a>chomazone@yahoo.com</li>
+                      <li><a href="#"><i class="fas fa-globe " arial-hidden="true"></i></a>www.choma.com</li>
 
-                    </ul>
-                </div>
-                <div class="FollowUS ">
-                    <h2 class="text-center">Follow Us</h2>
-                    <hr>
-                    <ul>
+                  </ul>
+              </div>
+              <div class="FollowUS ">
+                  <h2 class="text-center">Follow Us</h2>
+                  <hr>
+                  <ul>
 
-                        <li><a href="#"><i class="fab fa-twitter text-white"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube text-white"></i></a></li>
-                        <li><a href="#"><i class="fab fa-facebook text-white"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram text-white"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter text-white"></i></a></li>
+                      <li><a href="#"><i class="fab fa-youtube text-white"></i></a></li>
+                      <li><a href="#"><i class="fab fa-facebook text-white"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram text-white"></i></a></li>
 
-                    </ul>
-                </div>
-                <div class="keepIn-mx">
-                    <h2>Keep in Touch</h2>
-                    <hr>
-                    <p id="#mailing">Sign up to our mailing list and we <br /> will send you interesting snippets <br />
-                        on all things marketing
-                    </p>
-                    <a href="form.html"><button type="submit" class="btn btn-danger">Sign Up Now</button></a>
-                </div>
-            </div>
+                  </ul>
+              </div>
+              <div class="keepIn-mx">
+                  <h2>Keep in Touch</h2>
+                  <hr>
+                  <p id="#mailing">Sign up to our mailing list and we <br /> will send you interesting snippets <br />
+                      on all things marketing
+                  </p>
+                  <a href="form.html"><button type="submit" class="btn btn-danger">Sign Up Now</button></a>
+              </div>
+          </div>
 
 
-        </footer>
+      </footer>
 
-    </section>
-    <div class="text-center policy">
-        <p class="text-white pt-2">About us Services privacy Statement</p>
-        <p class="px-5 pb-3 copyright">copyright &copy; <span class="text-white">2021 Choma Zone </span> All rights
-            Reserved</p>
-    </div>
+  </section>
+  <div class="text-center policy">
+      <p class="text-white pt-2">About us Services privacy Statement</p>
+      <p class="px-5 pb-3 copyright">copyright &copy; <span class="text-white">2021 Choma Zone </span> All rights
+          Reserved</p>
+  </div>
 `);
       let getLocalStorageState = () => {
         orders = JSON.parse(localStorage.getItem("placedOrders"));
