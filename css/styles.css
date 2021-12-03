@@ -239,4 +239,14 @@ form {
   .logo img{
     width:50%;
   }
+
+  #profile{
+    display:flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top:6rem ;
+  }
+  .outletLocation,.outletName,.outletHours{
+    text-align: center;
+  }
 }

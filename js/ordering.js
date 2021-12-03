@@ -65,9 +65,9 @@ $(() => {
   let selectedJoint = getOrderJoint(clickedJoint);
   console.log(selectedJoint[0].hours);
   $("#profile").append(`<div class="">
-  <h1>${selectedJoint[0].name}</h1>
-  <p> ${selectedJoint[0].location}</p>
-  <h2>Hours : <span class="text-white">${selectedJoint[0].hours}</span></h2>
+  <h1 class="outletName">${selectedJoint[0].name}</h1>
+  <p class="outletLocation"> ${selectedJoint[0].location}</p>
+  <h2 class="outletHours">Hours : <span class="text-white">${selectedJoint[0].hours}</span></h2>
   
 </div>
 <div class="avatar">
