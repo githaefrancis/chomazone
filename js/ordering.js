@@ -149,7 +149,7 @@ $(() => {
     );
     console.log(currentOrder[currentOrder.length - 1].getOrderTotal());
     if(currentOrder[currentOrder.length - 1].deliveryLocation){
-      let displayableLocation=currentOrder[currentOrder.length - 1].deliveryLocation
+      let displayableLocation="Location: " + currentOrder[currentOrder.length - 1].deliveryLocation
     }
     else if(!(currentOrder[currentOrder.length - 1].deliveryLocation)){
       let displayableLocation="Pickup"
@@ -158,7 +158,7 @@ $(() => {
     $(".modal-body").append(
       `Your order item is ${
         currentOrder[currentOrder.length - 1].meatType
-      }<p>Quantity ${currentOrder[currentOrder.length - 1].quantity} Kgs</p><p>Total amount: ${currentOrder[currentOrder.length - 1].total}</p><p>${currentOrder[currentOrder.length - 1].deliveryLocation}</p>`
+      }<p>Quantity ${currentOrder[currentOrder.length - 1].quantity} Kgs</p><p>Total amount: ${currentOrder[currentOrder.length - 1].total}</p><p>Delivery Location: ${currentOrder[currentOrder.length - 1].deliveryLocation}</p>`
     );
     localStorage.setItem("placedOrders", JSON.stringify(currentOrder));
 
