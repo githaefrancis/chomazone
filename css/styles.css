@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.icon {
+  margin-bottom: -35px;
+}
+
+.start {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.7)),
+    url("../img/choma7.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 80vh;
+  /* text-align: center; */
+}
+
+.start h1 {
+  text-align: center;
+  align-items: center;
+}
+
+.start p {
+  padding-bottom: 2%;
+  text-align: center;
+  font-size: 10px;
+}
+
+
+.text {
+  position: relative;
+  top: 25%;
+  font-family: 'EB Garamond', serif;
+}
+
+.text p {
+  font-size: 25px;
+  margin-top: 2%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container .btn-warning {
+  background-color: #ff6f07;
+}
+
+.container .fa-star, .map-pin {
+  color: #ff6f07;
+}
+
+.container .fa-star-half-alt {
+  color: #ff6f07;
+}
+
+.container .btn-success {
+  background-color: #941f38;
+  color: white;
+}
+
+.locations h1 {
+  text-align: center;
+}
+
+.images h1 {
+  text-align: center;
+  padding-top: 3px;
+}
+
+/* .btn{
+     background-color: #FF6F07;
+ } */
+/* footer section */
+footer {
+  background: #322A2A;
+}
+
+footer h2 {
+  color: white;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.get-intouch hr,
+.FollowUS hr,
+.keepIn-mx hr {
+  width: 50%;
+  height: 5px;
+  background-color: #c53151;
+  /* border-width: 20px; */
+}
+
+.get-intouch ul {
+  list-style: none;
+  padding: 0;
+}
+
+.get-intouch i,
+.FollowUS i {
+  color: #918e8e;
+}
+
+.FollowUS li {
+  list-style: none;
+  margin-top: 5%;
+}
+
+.FollowUS hr {
+  width: 80%;
+}
+
+.FollowUS ul {
+  padding: 0;
+}
+
+.FollowUS i {
+  border: 1px solid rgb(201, 194, 194);
+  border-radius: 50%;
+  padding: 5%;
+}
+
+/* .keepIn-mx {
+  margin-right: 500px;
+} */
+
+/* style the see more button */
+
+.see-more-button {
+  background-color: #941f38;
+}
+
+.button-custom {
+  background-color: #941f38;
+}
+
+/* order form */
+
+#order-form {
+  background-color: #faf6f6;
+}
+
+/* header order page */
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.7)),
+    url("../img/grill.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  width: 100vw;
+}
+
+footer li,
+.keepIn-mx p, #mailing{
+  color: #876969 !important;
+}
+
+.policy {
+  background-color: #171111;
+  height: fit-content;
+}
+
+.copyright {
+  color: #736868;
+  margin-bottom: 0;
+}
+
+/* order page */
+.avatar img {
+  height: 480px;
+  width: 480px;
+}
+
+/* search button */
+
+#inputlocation {
+  width: 40%;
+  margin: auto;
+}
+
+/* joints page */
+
+.joint-body {
+  background-color: #faf6f6;
+}
+
+/* style form */
+form {
+  width: 80%;
+  margin: auto;
+}
+
+.topHeadings {
+  font-family: 'Abril Fatface', cursive;
+  margin-top: 3%;
+}
+
+.our {
+  color: #530E6B;
+}
+
+.special {
+  color: #941F38;
+}
+
+.card-p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+
+.zones-names {
+  font-family: 'EB Garamond', serif;
+}
+
+#contact {
+  border: 2px solid red;
+}
+
+.zones-location,
+.zones-hours {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(56, 54, 54);
+}
+.merchant-h{
+
+  max-height:fit-content;
+}
+@media only screen and (max-width: 480px) {
+  .avatar img {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img{
+    width:50%;
+  }
+
+  #profile{
+    display:flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top:6rem ;
+  }
+  .outletLocation,.outletName,.outletHours{
+    text-align: center;
+  }
+}
