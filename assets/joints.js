@@ -26,7 +26,7 @@
       "name":"Red House Grill",
       "location":"Dennis Pritt road, Nairobi",
       "maps":"https://www.google.com/maps/dir/-1.1927516,36.9218479/red+house+grill/@-1.2587282,36.7907375,13z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x182f10b1e3a3c755:0xcc576f667360a96!2m2!1d36.7928596!2d-1.2848179",
-      "hours":"6:00 am - 10:00 pm",
+      "hours":"6:00 am - 11:00 pm",
       "prices":600,
       "images":"./img/choma7.jpg"
 
@@ -48,7 +48,7 @@
       "name":"Nyumbani Njuguna's Place",
       "location":"Waiyaki Way,Nairobi",
       "maps":"https://www.google.com/maps/dir/-1.1927516,36.9218479/red+house+grill/@-1.2587282,36.7907375,13z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x182f10b1e3a3c755:0xcc576f667360a96!2m2!1d36.7928596!2d-1.2848179",
-      "hours":"6:00 am - 10:00 pm",
+      "hours":"6:00 am - 11:30 pm",
       "prices":600,
       "images":"./img/choma2.jpg"
 
@@ -70,7 +70,7 @@
       "name":"Jiweke Tavern",
       "location":"Kibera Road Close to, Ngong Rd",
       "maps":"https://www.google.com/maps/dir/-1.1927516,36.9218479/red+house+grill/@-1.2587282,36.7907375,13z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x182f10b1e3a3c755:0xcc576f667360a96!2m2!1d36.7928596!2d-1.2848179",
-      "hours":"",
+      "hours":"6:00 am - 11:00 pm",
       "prices":600,
       "images":"./img/choma4.jpg"
 

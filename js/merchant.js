@@ -63,45 +63,50 @@ $(() => {
 
       <!-- footer section -->
       <!-- footer section -->
-      <section class="bottom">
-          <footer>
-              <div class="container d-flex justify-content-evenly flex-wrap">
-                  <div class="get-intouch">
-                      <h2>Get in touch</h2>
-                 <ul >
-                     <li><a href="#"><i  class="fas fa-phone-alt"arial-hidden="true"></i></i></a>0702081966</li>
-                     <li><a href="#"><i class="fas fa-envelope"arial-hidden="true"></i></a>chomazone@yahoo.com</li>
-                     <li><a href="#"><i class="fas fa-globe" arial-hidden="true"></i></a>www.choma.com</li>
-      
+      <section class="bottom ">
+      <footer class="">
+          <div class="d-flex justify-content-evenly flex-wrap">
+              <div class="get-intouch">
+                  <h2>Get in touch</h2>
+                  <hr>
+                  <ul>
+                      <li><a href="#"><i class="fas fa-phone-alt " arial-hidden="true"></i></i></a>0702081966</li>
+                      <li><a href="#"><i class="fas fa-envelope " arial-hidden="true"></i></a>chomazone@yahoo.com</li>
+                      <li><a href="#"><i class="fas fa-globe " arial-hidden="true"></i></a>www.choma.com</li>
+
                   </ul>
-                  </div>
-                  <div class="FollowUS ">
-                      <h2 class="text-center">Follow Us</h2>
-                      <ul>
-                         <a href="#"><i class="fab fa-twitter fs-1 "></i></a>
-                         <a href="#"><i class="fab fa-youtube fs-1 text-danger"></i></a>
-                         <a href="#"><i class="fab fa-facebook fs-1"></i></a>
-                         <a href="#"><i class="fas fa-wifi fs-1 text-success"></i></a>
-      
-                      </ul>
-                  </div>
-                  <div class="keepIn mx-">
-                      <h2>Keep in Touch</h2>
-                      <p>Sign up to our mailing list  and we <br/> will send you interesting snippets <br />
-                          on all things marketing
-                      </p>
-                      <button class="btn btn-danger">Sign Up Now</button>
-                  </div>
-              </div><br><br>
-              
-      
-          </footer>
-          
-      </section>
-      <div class="text-center policy mt-3">
-        <p class="text-white pt-2">About us  Services  privacy Statement</p>
-         <p class="px-5 pb-3 copyright">copyright &copy; <span class="text-white">2021 Choma Zone </span> All rights  Reserved</p>
-    </div>
+              </div>
+              <div class="FollowUS ">
+                  <h2 class="text-center">Follow Us</h2>
+                  <hr>
+                  <ul>
+
+                      <li><a href="#"><i class="fab fa-twitter text-white"></i></a></li>
+                      <li><a href="#"><i class="fab fa-youtube text-white"></i></a></li>
+                      <li><a href="#"><i class="fab fa-facebook text-white"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram text-white"></i></a></li>
+
+                  </ul>
+              </div>
+              <div class="keepIn-mx">
+                  <h2>Keep in Touch</h2>
+                  <hr>
+                  <p id="#mailing">Sign up to our mailing list and we <br /> will send you interesting snippets <br />
+                      on all things marketing
+                  </p>
+                  <a href="form.html"><button type="submit" class="btn btn-danger">Sign Up Now</button></a>
+              </div>
+          </div>
+
+
+      </footer>
+
+  </section>
+  <div class="text-center policy">
+      <p class="text-white pt-2">About us Services privacy Statement</p>
+      <p class="px-5 pb-3 copyright">copyright &copy; <span class="text-white">2021 Choma Zone </span> All rights
+          Reserved</p>
+  </div>
 `);
       let getLocalStorageState = () => {
         orders = JSON.parse(localStorage.getItem("placedOrders"));
@@ -126,12 +131,12 @@ $(() => {
       currentOrderList.forEach((singleOrder) => {
         orderTotal += singleOrder.total;
         console.log(orderTotal);
-        console.log("we are here");
+
         $("#orders-list").append(`<tr>
   <td><span>${currentOrderList.indexOf(singleOrder) + 1}</span></td>
   <td><span>${singleOrder.customerName}</span></td>
   <td><span>${singleOrder.customerNumber}</span></td>
-  <td><span>Nairobi</span></td>
+  <td><span>${singleOrder.deliveryLocation}</span></td>
   <td><span>Roasted ${singleOrder.meatType} ${
           singleOrder.quantity
         }kg</span></td>
@@ -146,7 +151,7 @@ $(() => {
       console.log(merchantAuthenticated[0].id);
 
       window.location.href = "#orders-view";
-      alert("you are in");
+      alert("Welcome");
     } else {
       alert("wrong code");
     }
