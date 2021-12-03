@@ -1,7 +1,7 @@
 # CHOMA ZONE
 
 ## Description
-This is a website that lists Nyama Choma joints.It allows users to search top outlets and make an order.
+This is a website that lists Nyama Choma joints.It allows users to search top outlets and make an order. The signed up vendors can view the placed orders in a dashboard.
 
 ## Collaborators
 
