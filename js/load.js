@@ -51,7 +51,7 @@ $(() => {
              <i class="fas fa-star"></i>
              <i class="fas fa-star"></i>
              <i class="fas fa-star-half-alt"></i>
-             <p class= "zones-location"><i class="fas fa-map-marker-alt"> </i> ${activeJoint.location}</p>
+             <p class= "zones-location"><a href="${activeJoint.maps}" class="map-pin" target="_blank"><i class="fas fa-map-marker-alt"> </i></a> ${activeJoint.location}</p>
              <hr class="fw-5"/>
              <p class="zones-hours">Open hours: ${activeJoint.hours}</p>
              <a class="btn see-more-button text-white" href="ordering.html" id="${activeJoint.id}">see more</a>

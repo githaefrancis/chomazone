@@ -50,7 +50,7 @@ body {
   background-color: #ff6f07;
 }
 
-.container .fa-star {
+.container .fa-star, .map-pin {
   color: #ff6f07;
 }
 
